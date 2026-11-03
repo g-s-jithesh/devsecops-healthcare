@@ -15,6 +15,7 @@ spec:
       serviceAccountName: healthcare-sa
       securityContext:
         runAsNonRoot: true
+        runAsUser: 1001
       containers:
       - name: healthcare-app
         image: app:latest
